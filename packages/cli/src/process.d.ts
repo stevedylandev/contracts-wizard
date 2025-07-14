@@ -1,4 +1,4 @@
-declare var process: {
+declare const process: {
   cwd(): string;
   exit(code?: number): void;
   env: Record<string, string>;

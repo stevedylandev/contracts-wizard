@@ -1,40 +1,44 @@
 {
-  "name": "@openzeppelin/wizard-cli",
-  "version": "0.1.0",
-  "description": "CLI for OpenZeppelin Contracts Wizard",
-  "license": "AGPL-3.0-only",
-  "repository": "https://github.com/OpenZeppelin/contracts-wizard",
-  "main": "dist/index.js",
-  "bin": {
-    "wizard": "dist/index.js"
-  },
-  "ts:main": "src/index.ts",
-  "files": [
-    "LICENSE",
-    "NOTICE",
-    "/dist",
-    "/src",
-    "!**/*.test.*"
-  ],
-  "scripts": {
-    "prepare": "tsc",
-    "test": "ava",
-    "test:watch": "ava --watch"
-  },
-  "dependencies": {
-    "@openzeppelin/wizard": "^0.6.0",
-    "@openzeppelin/wizard-common": "^0.0.2",
-    "commander": "^11.1.0",
-    "inquirer": "^8.2.5",
-    "chalk": "^4.1.2",
-    "fs-extra": "^11.2.0"
-  },
-  "devDependencies": {
-    "@types/fs-extra": "^11.0.4",
-    "@types/inquirer": "^8.2.6",
-    "@types/node": "^20.0.0",
-    "ava": "^6.0.0",
-    "typescript": "^5.0.0"
-  },
-  "type": "commonjs"
+	"name": "@openzeppelin/wizard-cli",
+	"version": "0.1.0",
+	"description": "CLI for OpenZeppelin Contracts Wizard",
+	"license": "AGPL-3.0-only",
+	"repository": "https://github.com/OpenZeppelin/contracts-wizard",
+	"main": "dist/index.js",
+	"bin": {
+		"wizard": "dist/index.js"
+	},
+	"ts:main": "src/index.ts",
+	"files": [
+		"LICENSE",
+		"NOTICE",
+		"/dist",
+		"/src",
+		"!**/*.test.*"
+	],
+	"scripts": {
+		"prepare": "tsc",
+		"test": "ava",
+		"test:watch": "ava --watch",
+		"lint": "eslint",
+		"format:write": "prettier --write \"**/*\"",
+		"format:check": "prettier --check \"**/*\""
+	},
+	"dependencies": {
+		"@openzeppelin/wizard": "^0.6.0",
+		"@openzeppelin/wizard-common": "^0.0.2",
+		"chalk": "^4.1.2",
+		"commander": "^11.1.0",
+		"fs-extra": "^11.2.0",
+		"inquirer": "^8.2.5"
+	},
+	"devDependencies": {
+		"eslint": "^9.31.0",
+		"@types/fs-extra": "^11.0.4",
+		"@types/inquirer": "^8.2.6",
+		"@types/node": "^20.0.0",
+		"ava": "^6.0.0",
+		"typescript": "^5.0.0"
+	},
+	"type": "commonjs"
 }

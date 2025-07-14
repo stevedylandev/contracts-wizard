@@ -86,9 +86,9 @@ declare module '@openzeppelin/wizard' {
     premint?: string;
   }
 
-  export interface AccountOptions extends CommonOptions {
-    // Add any specific properties for Account
-  }
+  // export interface AccountOptions extends CommonOptions {
+  //   // Add any specific properties for Account
+  // }
 
   export interface KindedOptions {
     ERC20: { kind: 'ERC20' } & ERC20Options;

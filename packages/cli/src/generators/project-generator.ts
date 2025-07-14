@@ -60,7 +60,9 @@ async function generateHardhatProject(
   if (contract.upgradeable) {
     fs.mkdirSync(path.join(projectDir, 'scripts'), { recursive: true });
   } else {
-    fs.mkdirSync(path.join(projectDir, 'ignition/modules'), { recursive: true });
+    fs.mkdirSync(path.join(projectDir, 'ignition/modules'), {
+      recursive: true,
+    });
   }
 
   // Write contract file
@@ -183,7 +185,7 @@ artifacts
 `;
 }
 
-function generatePackageJson(contract: Contract): any {
+function generatePackageJson(contract: Contract) {
   const dependencies: Record<string, string> = {
     '@openzeppelin/contracts': '^5.0.0',
   };
@@ -237,10 +239,10 @@ describe("${contract.name}", function () {
   it("Test contract", async function () {
     const ContractFactory = await ethers.getContractFactory("${contract.name}");
     ${addressArgs.map((arg, i) => `const ${arg} = (await ethers.getSigners())[${i}].address;`).join('\n    ')}
-    
+
     const instance = await ${deploymentCall};
     await instance.waitForDeployment();
-    
+
     ${expectsCode}
   });
 });

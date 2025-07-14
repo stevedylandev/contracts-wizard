@@ -1,5 +1,4 @@
 import { Command } from 'commander';
-import inquirer from 'inquirer';
 import { contractSelection } from '../prompts/contract-selection';
 import { featureSelection } from '../prompts/feature-selection';
 import { environmentSelection } from '../prompts/environment-selection';

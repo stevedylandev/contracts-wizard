@@ -1,6 +1,0 @@
-[submodule "packages/cli/MyNFT/lib/forge-std"]
-	path = packages/cli/MyNFT/lib/forge-std
-	url = https://github.com/foundry-rs/forge-std
-[submodule "packages/cli/MyNFT/lib/openzeppelin-contracts"]
-	path = packages/cli/MyNFT/lib/openzeppelin-contracts
-	url = https://github.com/OpenZeppelin/openzeppelin-contracts

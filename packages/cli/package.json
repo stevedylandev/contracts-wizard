@@ -27,17 +27,17 @@
 	"dependencies": {
 		"@openzeppelin/wizard": "^0.6.0",
 		"@openzeppelin/wizard-common": "^0.0.2",
-		"chalk": "^4.1.2",
 		"commander": "^11.1.0",
 		"fs-extra": "^11.2.0",
+		"gradient-string": "^3.0.0",
 		"inquirer": "^8.2.5"
 	},
 	"devDependencies": {
-		"eslint": "^9.31.0",
 		"@types/fs-extra": "^11.0.4",
 		"@types/inquirer": "^8.2.6",
 		"@types/node": "^20.0.0",
 		"ava": "^6.0.0",
+		"eslint": "^9.31.0",
 		"typescript": "^5.0.0"
 	},
 	"type": "commonjs"
